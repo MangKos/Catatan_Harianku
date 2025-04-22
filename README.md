@@ -123,8 +123,6 @@
 
 ****MainActivity****
 
-class MainActivity : AppCompatActivity() {
-
     private lateinit var etDiaryContent: EditText
     private lateinit var tvCurrentDate: TextView
     private lateinit var btnSave: Button
