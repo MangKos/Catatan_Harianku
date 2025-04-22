@@ -1,4 +1,4 @@
-📱 Aplikasi Formulir Input Android
+Aplikasi Formulir Input Android
 Aplikasi Android Native sederhana yang mendemonstrasikan penggunaan Input Control, seperti:
 
 Input nomor telepon,
