@@ -1,3 +1,10 @@
+📱 Aplikasi Formulir Input Android
+Aplikasi Android Native sederhana yang mendemonstrasikan penggunaan Input Control, seperti:
+
+Input nomor telepon
+Pemilihan tanggal (Date Picker)
+Hasil input langsung ditampilkan secara real-time dalam TextView.
+
 ****activity_main.xml****
 
     <ScrollView
