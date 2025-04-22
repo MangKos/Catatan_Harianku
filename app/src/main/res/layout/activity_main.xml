@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_foreground"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Header Catatan -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CATATAN HARIANKU"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#5D4037"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Tanggal Catatan -->
+            <TextView
+                android:id="@+id/tvCurrentDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selasa, 22 April 2025"
+                android:textSize="16sp"
+                android:textColor="#795548"
+                android:gravity="right"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Isi Catatan -->
+            <EditText
+                android:id="@+id/etDiaryContent"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:hint="Tulis perasaan dan pikiranmu hari ini..."
+                android:inputType="textMultiLine"
+                android:textSize="16sp"
+                android:textColor="#3E2723"
+                android:background="@android:color/transparent"
+                android:padding="12dp"
+                android:gravity="top|left"
+                android:textStyle="italic"/>
+
+            <!-- Mood Hari Ini -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mood hari ini:"
+                    android:textSize="16sp"
+                    android:textColor="#5D4037"/>
+
+            </LinearLayout>
+
+            <!-- Tombol Simpan -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan Catatan"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#5D4037"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+
+            <!-- Garis Pembatas -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BCAAA4"
+                android:layout_marginVertical="16dp"/>
+
+            <!-- Catatan Sebelumnya -->
+            <TextView
+                android:id="@+id/tvPreviousNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Catatan Sebelumnya"
+                android:textSize="14sp"
+                android:textColor="#795548"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih Tanggal"
+                android:layout_marginTop="16dp"/>
+
+            <Button
+                android:id="@+id/btn_show_alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hapus Catatan"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#FF5252"
+                android:textColor="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor Telepon (Opsional)"
+                android:inputType="phone"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@android:drawable/ic_menu_call"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
