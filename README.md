@@ -5,6 +5,11 @@ Input nomor telepon,
 Pemilihan tanggal (Date Picker),
 Hasil input langsung ditampilkan secara real-time dalam TextView.
 
+**Tampilannya**
+
+![image](https://github.com/user-attachments/assets/89ca0fe4-3f7a-4419-9768-e22af6698a19)
+
+
 ****activity_main.xml****
 
     <ScrollView
@@ -217,8 +222,3 @@ Hasil input langsung ditampilkan secara real-time dalam TextView.
             // ... lanjutkan penyimpanan
         }
     }
-
-
-**Tampilannya**
-
-![image](https://github.com/user-attachments/assets/89ca0fe4-3f7a-4419-9768-e22af6698a19)
